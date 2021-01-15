@@ -1,26 +1,34 @@
- .bg-dark{
+ .nav-colour{
     color: white;
     /* background-image: linear-gradient(rgb(29, 170, 170), rgb(8, 70, 70)) !important; */
     background-image:linear-gradient( rgb(16, 212, 193), rgb(28, 168, 154), rgb(12, 117, 107) )!important;
     /* background-image:linear-gradient(#55bce9,#0c6d97) !important; */
 } 
+body{
+    background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("scott-graham-5fNmWej4tAA-unsplash.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat ;
+    width: 100%;
+    height: 600px;
+}
 .navbar-brand{
 	font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.bgimg{
-    background-image: url("scott-graham-5fNmWej4tAA-unsplash.jpg");
+/* .bgimg{
+    background-image:linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("scott-graham-5fNmWej4tAA-unsplash.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat ;
-    width: 400px;
-    height: 900px;
-}
-.overlay{
     width: 100%;
-    height: 600px;
+    height: 100vh;
+} */
+/* .overlay{
+    width: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-}
+} */
 .headerset{
     padding-top: 200px;
     box-sizing: border-box;
