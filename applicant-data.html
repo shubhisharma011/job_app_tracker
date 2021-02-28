@@ -22,23 +22,26 @@
                     <div class="box" style="margin-top: 10px;">
                    
                         <h3 style="display: inline-block; color: rgb(50, 125, 211); font-family:'Times New Roman', Times, serif ;">Applicant name</h3>
-                        <div class="dropdown app-action">
-                        <button class="btn btn-info btn-sm dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Application Action
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                          <button class="dropdown-item" type="button">Hired</button>
-                          <button class="dropdown-item" type="button">Rejected</button>
-                          <button class="dropdown-item" type="button">Waiting</button>
+                        
+                        <!-- changes made on 28th feb 6pm by Anukeerti -->
+                        <div class="app-action">
+                            <select class="select">
+                                <option disabled selected hidden>Applicant Action</option>
+                                <option value="hired">Hired</option>
+                                <option value="rejected">Rejected</option>
+                                <option value="waiting">Waiting</option>
+                                
+                            </select>
                         </div>
-                      </div>
+    
                     </br>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <h6 style="font-size: smaller;font-style: italic; color: rgb(94, 90, 90);">Applied:&nbsp;&nbsp; days ago</h6>
+                </br>
+                    <label style="font-size: smaller;font-weight: 500; color: rgb(82, 78, 78);">Applicant Rating</label>
+                    <input type="number" name="number" value="0" min="0" max="5" class="rating" >
+                    <!-- changes ends -->
+                    
+                </br>
+                    <h6 style="font-size: 12px;font-style: italic; color: rgb(94, 90, 90);">Applied:&nbsp;&nbsp; days ago</h6>
                      </br>
                     <h5 style="color: rgb(50, 125, 211);">Post Applied</h5>
                     <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sed nesciunt voluptatibus voluptates neque earum vero, molestiae explicabo esse perferendis! Culpa tempore impedit cum deleniti rem. Vitae, iste! Eaque, saepe.</p>
@@ -77,16 +80,19 @@
                     <p>Name of job post he/she has applied for</p>
                     <div class="modal-body mx-3 text-left">
                         <div class="md-form mb-5">
-                            <label class="label control-label">Interview type</label></br>
-                            <div class="btn-group text-center">
-                                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">select</button>
-                                <div class="dropdown-menu">
-                                    <h5 class="dropdown-item">applied</h5>
-                                    <h5 class="dropdown-item">applied</h5>
-                                    <h5 class="dropdown-item">applied</h5>
-                                    <h5 class="dropdown-item">applied</h5>
-                                </div>
-                            </div>
+
+                            <!-- changes made on 28th feb 6pm by Anukeerti -->
+                            
+                                <select class="select">
+                                    <option disabled selected hidden>Interview Type</option>
+                                    <option value="applied" >Applied</option>
+                                    <option value="first round">First round</option>
+                                    <option value="second round">Second round</option>
+                                    <option value="third round">Third round</option>
+                                </select>
+                            
+                            <!-- changes end -->
+
                         </div>
                         <div class="md-form mb-5">
                             <i class="fa fa-calendar prefix grey-text" aria-hidden="true"></i>
@@ -95,16 +101,25 @@
                         </div>
 
                         <div class="md-form mb-5">
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <i class="fa fa-clock" aria-hidden="true"></i>
                             <label class="label control-label">Interview time</label>
                             <input type="time" class="form-control" name="appt" id="appt" placeholder="Enter time(12 hours)">
                         </div>
 
+                        <!-- changes made on 28th feb 6pm by Anukeerti -->
                         <div class="md-form mb-5">
                             <i class="fa fa-map-marker prefix grey-text" aria-hidden="true"></i>
+                             <label class="label control-label">Venue</label>
+                             <input type="text" class="form-control" name="appt" id="appt" placeholder="Enter interview location">
+                        </div>
+
+                        <div class="md-form mb-5">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                              <label class="label control-label">Other details</label>
                             <textarea id ="details" input type="text" class="form-control" name="text" placeholder="Any other details"></textarea>
                         </div>
+
+                         <!-- changes end -->
                     </div>
 
                     <div class="modal-footer d-flex justify-content-center">
@@ -124,7 +139,7 @@
             </div>
         </br>
     </br>
-            <div class="box-info">
+            <div class="box-info" >
                 <p>Application &nbsp; &nbsp; &nbsp;Date &nbsp;&nbsp;&nbsp;Time &nbsp;&nbsp;&nbsp;Venue</p>
             </div>
         </div>

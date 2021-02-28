@@ -15,8 +15,35 @@ body{
     border: 1px grey solid;
     text-align: center;
     border-radius: 5px;
+
 }
+/* changes made on 28feb 6pm by anukeerti */
 
 .app-action{
     float: right;
+    
 }
+.select{
+    padding: 5px 12px;
+    cursor: pointer;
+    color: white;
+    font-weight: 380;
+    border-radius: 5px;
+    background-color: #17a2b8;
+    border: none;
+}
+.select:focus,select:hover{
+    
+    outline: none;
+    background-color:#128799;
+
+}
+.select option{
+    background-color: white;
+    color: rgb(56, 55, 55);
+    font-weight: 380;
+}
+.rating{
+    
+}
+/* changes end */
