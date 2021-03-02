@@ -47,20 +47,23 @@
                     <p style="color: black;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam sed nesciunt voluptatibus voluptates neque earum vero, molestiae explicabo esse perferendis! Culpa tempore impedit cum deleniti rem. Vitae, iste! Eaque, saepe.</p>
                     </br>
                      </br>
-                    <h5 style="font-size: 15px;">Contact Phone Number</h5>
+                    <label class="form-label" style="font-size: 15px;">Contact Phone Number</label>
                     <input type="text" class="form-control" name="text" id="text">
                     </br>
-                    <h5 style="font-size: 15px;">Email Id</h5>
+                    <label class="form-label" style="font-size: 15px;">Email Id</label>
                     <input type="email" class="form-control" name="email">
                     </br>
-                    <h5 style="font-size: 15px;">Residential Address</h5>
+                    <label class="form-label" style="font-size: 15px;">Residential Address</label>
                     <textarea id ="details" input type="text" class="form-control" name="text"></textarea>
                     </br>
-                    <h5 style="font-size: 15px;">Attachments</h5>
+                    <label class="form-label"style="font-size: 15px;">Attachments</label></br>
+                    <a href="#" download></a><button type="button" class="btn btn-primary btn-md">Download &nbsp;<i class="fa fa-download" aria-hidden="true"></i></button>
 
                     </div>
                 </div>
             </div>
+
+            <!-- Add interview popup -->
             
             <div class="col"  style="border: 0.5px solid rgb(145, 141, 141);border-radius:5px; height: 20vh; width: 90%;background-color: white;">
                 <div class="rightside">
@@ -122,17 +125,24 @@
                          <!-- changes end -->
                     </div>
 
-                    <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-success" type="submit">Save</button>
+                    <!-- changes made on 2nd march 4:30 pm by Anukeerti-->
+
+                    <!-- <div class="modal-footer d-flex justify-content-center">
+                        <a></a><input class="btn btn-success" type="button" value="Save">
                     </div>
 
                     
                     
-                    <div class="modal-footer d-flex justify-content-center">
-                    <button class="btn btn-danger" type="submit">Cancel</button>
-                    </div>
+                    <div class="modal-footer d-flex justify-content-center" style="margin-left: 5px;">
+                        <input class="btn btn-danger"  type="submit" value="Cancel" onclick="goBack()"></a>
+                    </div> -->
 
-                    
+                    <div class="modal-footer">
+                        <a style="margin-right:20px; padding: 5px 8px;"></a><input class="btn btn-success btn-md" type="button" value="Save">
+                       <input class="btn btn-danger btn-md" style="padding: 5px 8px;"  type="submit" value="Cancel" onclick="goBack()"></a>
+                  </div> 
+
+                  <!-- changes end -->
 
                 </div>
             </div>
